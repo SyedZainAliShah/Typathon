@@ -1,0 +1,51 @@
+.pending{
+  color: gray;
+}
+
+.correct{
+  color: green;
+}
+
+.incorrect{
+  color: red;
+  font-weight: bold;
+}
+
+.success{
+  color: rgb(0, 0, 0);
+  font-size: large;
+  background-color: white;
+}
+
+.title{
+  color: rgb(77, 77, 77);
+}
+
+
+
+.initial {
+  height: 200px;
+  position: relative;
+}
+
+.vertical-center {
+  height: 100vh;
+  width: 100vw;
+  font-size: 35px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 250px;
+  margin: 0px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.clear{
+  display: flex;
+
+
+}
+.clear-but{
+  width: 900%;
+  text-align: center;
+}

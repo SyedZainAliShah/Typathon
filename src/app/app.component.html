@@ -1,0 +1,66 @@
+<!--
+<div class="initial">
+  <div class="vertical-center">
+    <button
+    *ngIf="st === false"
+    class="button is-primary is-active is-large"
+    (click)="start()"
+  >
+    Start Challenge
+  </button>
+  </div>
+</div> -->
+
+<div class="vertical-center" *ngIf="st === false">
+  <button
+    (click)="start()"
+    class="button is-active is-centered is-large is-primary"
+  >
+    Tap to start typing!
+  </button>
+</div>
+<br />
+<div></div>
+<div *ngIf="st === true" class="container">
+  <div class="columns is-centered">
+    <div class="box column is-half">
+      <h1 class="title has-text-centered">Typathon</h1>
+      <p class="has-text-centered">
+        <span
+          [class]="compare(letter, enteredText[i])"
+          *ngFor="let letter of randomText.split(''); let i = index"
+          >{{ letter }}</span
+        >
+      </p>
+
+      <div class="field">
+        <br />
+        <input
+          type="text"
+          class="textarea is-primary"
+          (input)="onInput($event)"
+          #input1
+        />
+        <div class="clear">
+          <button class="clear-but button is-primary" (click)="input1.value=''" (click)="clear()">Clear</button>
+
+        </div>
+        <br />
+      </div>
+      <br />
+      <div
+        *ngIf="enteredText === randomText"
+        class="success box has-text-centered"
+      >
+        <h1 class="success">Great job! ❤️</h1>
+        <br />
+        <button
+          class="button is-primary is-outlined"
+          (click)="input1.value=''" (click)="randomTextGenerator()"  (click)="clear()"
+        >
+          New Challenge
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
