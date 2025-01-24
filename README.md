@@ -1,6 +1,6 @@
 # Typathon 
+Typathon is a typing game built with Angular (v14.2.5), focusing on a clean, simple design. Angular was chosen for its robust structure and efficient handling of dynamic content, making it perfect for this real-time typing challenge. The game generates random Latin words via Faker JS to enhance typing practice.
 
-A typing game that uses latin words generated through Faker JS.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
 
 ## Development server
