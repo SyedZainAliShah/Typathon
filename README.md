@@ -15,8 +15,7 @@ A clean, minimal typing game built with Angular 14 and TypeScript. Random practi
 
 - Angular 14 (CLI project) + TypeScript
 - Faker.js for text generation
-- Plain CSS for the character-state styling (correct / incorrect / pending)
-- Deployed via GitHub Pages from `docs/`
+- CSS for the character-state styling (correct / incorrect / pending)
 
 ## Development
 
