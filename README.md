@@ -1,28 +1,35 @@
-# Typathon 
-Typathon is a typing game built with Angular (v14.2.5), focusing on a clean, simple design. Angular was chosen for its robust structure and efficient handling of dynamic content, making it perfect for this real-time typing challenge. The game generates random Latin words via Faker JS to enhance typing practice.
+# ⌨️ Typathon — Typing Practice Game
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
+A clean, minimal typing game built with Angular 14 and TypeScript. Random practice text is generated on every round, and each character you type is graded live — correct, incorrect, or pending — so you see exactly where you slip.
 
-## Development server
+**Play it:** https://syedzainalishah.github.io/Typathon/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Live per-character feedback** — every keystroke is compared against the target text in real time and color-coded
+- **Fresh text every round** — random paragraphs generated with Faker.js, so you never memorize the test
+- **One-click restart** — new text, cleared input, instant next round
+- **Zero-friction UI** — no signup, no settings, just type
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tech Stack
 
-## Build
+- Angular 14 (CLI project) + TypeScript
+- Faker.js for text generation
+- Plain CSS for the character-state styling (correct / incorrect / pending)
+- Deployed via GitHub Pages from `docs/`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Development
 
-## Running unit tests
+```bash
+npm install
+ng serve        # http://localhost:4200
+ng build        # production build
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Possible Next Steps
 
-## Running end-to-end tests
+WPM and accuracy scoring, difficulty levels (word length / punctuation), and a results history — the component structure keeps these straightforward to add.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Built by [@SyedZainAliShah](https://github.com/SyedZainAliShah)
